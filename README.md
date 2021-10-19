@@ -1,2 +1,2 @@
 # Food-Buddy
-An app that allows someone to find a restaurant near them using Goodle Maps API
+An app that randomly generates a restaurant near a user using Goodle Maps API
