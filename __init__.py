@@ -1,5 +1,6 @@
 from flask import Flask
+import googlemaps 
 
 app = Flask(__name__)
 
-API_Key = 'AIzaSyBnkCg5eSBGYyKBCFxj68g-LZzdcPhGXI8'
+API_KEY = 'AIzaSyAZIwRHCr2Pa9AgnOM2sdnsVhRDBmEx_LM'
