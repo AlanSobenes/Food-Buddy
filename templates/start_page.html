@@ -4,20 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/static/style.css">
     <title>foodbuddy</title>
 </head>
 <body>
-    <div class="container">
-        <div class="content"> 
-            <img src="/static/frenchfries.gif" id="img">
-            <div class="text-wrapper">
-                <h1>Welcome to foodbuddy</h1>
-                <button id="get-location" class="btn">Start</button>
-            </div>
+    <div class="topnav">
+        <h1><a href="#home" class="active">foodbuddy</a></h1>
+        <div id="myLinks">
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="https://www.codingdojo.com/">Coding Dojo</a>>
         </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <img src="/static/frenchfries.gif" class="img">
     </div>
-</body>
+    <div class="btn-mid">
+        <h1 class="text">Welcome to foodbuddy</h1>
+        <button class="btn">Start</button>
+    </div>
+
+    <script src="/static/html_css.js"></script>
+    </body>
 </html>
 

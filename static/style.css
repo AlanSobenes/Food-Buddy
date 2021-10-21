@@ -1,10 +1,81 @@
 *{
     margin: 0px;
     padding: 0px;
-    /* height: 800px; */
 }
 
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    width: 500px;
+    }
 
+.topnav #myLinks {
+    display: none;
+    background-color: black;
+    }
+
+    /* Style navigation menu links */
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    }
+
+    /* Style the hamburger menu */
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+
+    /* Add a grey background color on mouse-over */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    }
+
+    /* Style the active link (or home/logo) */
+.active {
+    background-color: red;
+    font-family: sans-serif;
+    font-weight: bold;
+    }
+
+.img{
+    height: 130vh;
+    width: 500px;
+}
+
+.btn-mid{
+    text-align: center;
+    width: 500px;
+    margin-top: -700px;
+}
+
+.btn{
+    height: 50px;
+    width: 180px;
+    color: white;
+    background-color: red;
+    position: relative;
+    border: 2px solid black;
+    box-shadow: 3px 3px 3px black;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.text{
+    font-family: 'Lobster Two', cursive;
+    position: relative;
+    margin-bottom: 30px;
+    color: yellow;
+    font-size: 60px;
+}
 
 
 /* PAGE 2 */
