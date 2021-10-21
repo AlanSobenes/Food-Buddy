@@ -12,17 +12,29 @@
 
 <body>
     <H1>Food Buddy</H1>
+    <label for="foodCatagory">Food your in the Mood For</label>
+    <select name="" id="input">
+        <option value="">your choice please....</option>
+        <option value="all restaurants">Any type</option>
+        <option value="mexican food">Mexican Food</option>
+        <option value="chinese food">Chinese Food</option>
+        <option value="Italian food">Italian Food</option>
+        <option value="american food">American Food</option>
+        <option value="mediterranean food">Mediterranean Food</option>
+        <option value="indian food">Indian Food</option>
+        <option value="BBQ food">BBQ</option>
+        <option value="fast food">Fast Food</option>
+    </select>
 
     <div id="map"></div>
     
     
-    
-    
+   
     
     
     
     <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZIwRHCr2Pa9AgnOM2sdnsVhRDBmEx_LM&callback=initMap">
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZIwRHCr2Pa9AgnOM2sdnsVhRDBmEx_LM&libraries=places&callback=initMap">
     </script>
 
 
