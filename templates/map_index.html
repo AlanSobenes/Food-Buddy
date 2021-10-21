@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Food-Buddy/static/css/style.css">
+    <script src="/Food-Buddy/static/javascript/map_app_test.js"></script>
+    <title>!Food Buddy!</title>
+</head>
+
+<body>
+    <H1>Food Buddy</H1>
+    <label for="foodCatagory">Food your in the Mood For</label>
+    <select name="" id="input">
+        <option  value="">your choice please....</option>
+        <option value="food">Any type</option>
+        <option value="mexican food">Mexican Food</option>
+        <option value="chinese food">Chinese Food</option>
+        <option value="Italian food">Italian Food</option>
+        <option value="american food">American Food</option>
+        <option value="mediterranean food">Mediterranean Food</option>
+        <option value="indian food">Indian Food</option>
+        <option value="BBQ food">BBQ</option>
+        <option value="fast food">Fast Food</option>
+    </select>
+    <label for="radius">Choose your distance!</label>
+    <select name="" id="radius">
+        <option  value="1000">Walking Distance</option>
+        <option value="2000">Close</option>
+        <option value="3000">Average distance</option>
+        <option value="4000">Not so Close</option>
+        <option value="5000">Far</option>
+    </select>
+    <div id="map"></div>
+    
+    
+
+    
+    
+    
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZIwRHCr2Pa9AgnOM2sdnsVhRDBmEx_LM&libraries=places&callback=initMap">
+    </script>
+
+
+
+
+</body>
+
+</html>
