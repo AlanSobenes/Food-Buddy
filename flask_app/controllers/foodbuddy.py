@@ -8,4 +8,4 @@ def index():
 
 @app.route('/start')
 def start():
-    return render_template("index.html")
+    return render_template("map_index.html")

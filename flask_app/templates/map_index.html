@@ -7,47 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Food-Buddy/flask_app/static/css/map_style.css">
     <script src="/Food-Buddy/flask_app/static/js/map_app_proto.js"></script>
-
-    
     <title>!Food Buddy!</title>
 </head>
 
 <body>
     <H1>Food Buddy</H1>
-    <label for="foodCatagory">Food your in the Mood For</label>
+    <label for="foodCatagory">Food you're in the mood for:</label>
     <select name="" id="input">
-        <option  value="">your choice please....</option>
-        <option value="food">Any type</option>
-        <option value="mexican food">Mexican Food</option>
-        <option value="chinese food">Chinese Food</option>
-        <option value="Italian food">Italian Food</option>
+        <option  value="">your choice....</option>
+        <option value="food">Any food</option>
         <option value="american food">American Food</option>
+        <option value="chinese food">Chinese Food</option>
+        <option value="italian food">Italian Food</option>
+        <option value="japanese food">Japanese Food</option>
         <option value="mediterranean food">Mediterranean Food</option>
+        <option value="mexican food">Mexican Food</option>
         <option value="BBQ food">BBQ</option>
         <option value="fast food">Fast Food</option>
     </select>
     <label for="radius">Choose your distance!</label>
     <select name="" id="radius">
-        <option  value="1000">Walking Distance</option>
-        <option value="2500">Close</option>
-        <option value="5000">Average distance</option>
-        <option value="6500">Not so Close</option>
-        <option value="8000">Far</option>
+        <option  value="1609">1 mile away</option>
+        <option value="3219">2 miles away</option>
+        <option value="4828">3 miles away</option>
+        <option value="6437">4 miles away</option>
+        <option value="8047">5 miles away</option>
     </select>
     <div id="randoplace">Food Buddy has chosen:</div>
-    <div id="map"></div>
-    
-    
 
-    
-    
-    
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZIwRHCr2Pa9AgnOM2sdnsVhRDBmEx_LM&libraries=places&callback=initMap">
-    </script>
-
-
-
+    <div id="map">
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZIwRHCr2Pa9AgnOM2sdnsVhRDBmEx_LM&libraries=places&callback=initMap">
+        </script>
+    </div>
 
 </body>
 
