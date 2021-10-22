@@ -143,3 +143,19 @@
 .bold{
     font-weight: bold;
 }
+
+/* about_us page */
+
+.background-color{
+    background-color: bisque;
+    text-align: center;
+}
+
+.padding{
+    padding: 20px;
+}
+
+.abt-margin{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
