@@ -1,4 +1,8 @@
 #map{
-    height: 1000px;
+    height: 800px;
     width: 100%;
+}
+
+body{
+    background-image: url(/Food-Buddy/flask_app/static/img/foodTable.jpg);
 }

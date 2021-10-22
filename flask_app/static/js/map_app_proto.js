@@ -1,20 +1,22 @@
 let map, infoWindow, cityCircle;
 
 function initMap() {
-    
+
     map = new google.maps.Map(document.getElementById("map"), {
         center: { lat: 37.335480, lng: -121.893028 },
-        zoom: 13,
+        zoom: 12,
     });
+
+
 
     infoWindow = new google.maps.InfoWindow();
 
     const locationButton = document.createElement("button");
 
-    locationButton.textContent = "Go to your Area";
+    locationButton.textContent = "Pick My Restaurant!";
     locationButton.classList.add("custom-map-control-button");
     map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
-    locationButton.addEventListener("click", () => {
+    locationButton.addEventListener("click",  () => {
         // Try HTML5 geolocation.
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(
@@ -25,7 +27,7 @@ function initMap() {
                     };
 
                     infoWindow.setPosition(pos);
-                    infoWindow.setContent("You are here");
+                    infoWindow.setContent("Im Hungry!");
                     infoWindow.open(map);
                     map.setCenter(pos);
 
@@ -34,10 +36,10 @@ function initMap() {
                         strokeOpacity: 0.8,
                         strokeWeight: 2,
                         fillColor: "#add8e6",
-                        fillOpacity: 0.35,
+                        fillOpacity: 0.20,
                         map: map,
                         center: pos,
-                        radius: 8000,
+                        radius: 10000,
                     };
                     cityCircle = new google.maps.Circle(circle);
 
@@ -49,40 +51,43 @@ function initMap() {
                         location: pos,
                         radius: radius,
                         keyword: category,
-
-
                     };
 
 
 
 
                     service.search(request, function (results) {
-                        console.log(results.length);
+                    console.log(results.length);
+                    console.log(results)
 
-                        const random = Math.floor(Math.random() * results.length);
-                        var rando = results[random].name;
-                        var fullrando = results[random];
-                        console.log(rando);
+                    const random = Math.floor(Math.random() * results.length);
+                    var rando = results[random].name;
+                    var fullrando = results[random];
+                    console.log(rando);
 
-                        new google.maps.Marker({
-                            map,
-                            title: fullrando.name,
-                            position: fullrando.geometry.location,
-                            
-                        })
-
-                        const randoplace = document.getElementById("randoplace");
-                        const li = document.createElement("li");
-                        
-                        li.textContent = fullrando.name;
-                        randoplace.appendChild(li);
-                        li.addEventListener("click", () => {
-                        map.setCenter(place.geometry.location);
-                        });
+                    new google.maps.Marker({
+                        map,
+                        title: fullrando.name,
+                        position: fullrando.geometry.location,
                     })
 
+                    const randoplace = document.getElementById("randoplace");
+                    const li = document.createElement("li");
+                    li.textContent = fullrando.name;
+                    randoplace.appendChild(li);
+                    li.addEventListener("click", () => {
+                        map.setCenter(pos);
+                    });
+                    })
+
+
+
+
+
                     
-                    
+
+
+
 
                 },
 
