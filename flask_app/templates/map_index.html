@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Food-Buddy/flask_app/static/css/map_style.css">
-    <script src="/Food-Buddy/flask_app/static/js/map_app_proto.js"></script>
-
+    <link rel="stylesheet" href="/flask_app/static/css/map_style.css">
+    <script src="/flask_app/static/js/map_app_proto.js"></script>
     
-    <title>!Food Buddy!</title>
+    
+    
+    <title>Food Buddy</title>
 </head>
 
 <body>
     
-    <H1>Food Buddy</H1>
-    <label for="foodCatagory">Food your in the Mood For</label>
+    
+    <H1 class="text">Food Buddy</H1>
+    <label for="foodCatagory" class="text">Food your in the Mood For</label>
     <select name="" id="input">
         <option value="food">Any type</option>
         <option value="mexican food">Mexican Food</option>
@@ -26,14 +28,17 @@
         <option value="BBQ food">BBQ</option>
         <option value="fast food">Fast Food</option>
     </select>
-    <label for="radius">Choose your distance!</label>
+    <label for="radius" class="text">Choose your distance!</label>
     <select name="" id="radius">
         <option value="500">Walking Distance</option>
         <option value="10000">Driving Distance</option>
     </select>
-    <div id="randoplace">Food Buddy has chosen:</div>
+    <div id="randoplace" class="text">Food Buddy has chosen:</div>
+<div id="flex">
 
     <div id="map"></div>
+
+</div>
     
     
 
@@ -44,7 +49,7 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZIwRHCr2Pa9AgnOM2sdnsVhRDBmEx_LM&libraries=places&callback=initMap">
     </script>
 
-
+    
 
 
 </body>

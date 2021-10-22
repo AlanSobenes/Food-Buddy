@@ -1,8 +1,13 @@
 #map{
-    height: 800px;
-    width: 100%;
+    margin-top: 100px;
+    height: 600px;
+    width: 75%;
+}
+#flex{
+    display: flex;
+    justify-content: center;
+}
+body{
+    background-image: url(/flask_app/static/img/foodTable.jpg);
 }
 
-body{
-    background-image: url(/Food-Buddy/flask_app/static/img/foodTable.jpg);
-}
