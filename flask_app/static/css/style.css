@@ -102,20 +102,44 @@
     border: 2px solid black;
 } */
 
-/* 2nd page bottom box info */
+/* contact us page */
 
-.abt-us{
-    margin-top: 130%;
-    padding: 10px;
+.cntc-us{
+    height: 155vh;
+    background-color: wheat;
 }
 
-
-.abt-us h3{
-    margin-left: 6px;
+.cntc-us h1, .cntc-box{
+    margin-left: 13px;
 }
 
-.abt-us p{
-    text-align: center;
-    margin: 0px 5px;
+.cntc-us h1{
+    padding-top: 20px;
 }
 
+.home-btn{
+    margin-top: 20px;
+    margin-left: 100px;
+    padding: 5px;
+    border: 2px solid black;
+    box-shadow: 4px 4px 4px black;
+    width: 200px;
+    background-color: burlywood;
+
+}
+
+.cntc-box{
+    border: 2px solid black;
+    padding: 20px;
+    background-color: blanchedalmond;
+    margin-right: 13px;
+
+}
+
+.cntc-box p{
+    font-family: serif;
+}
+
+.bold{
+    font-weight: bold;
+}
