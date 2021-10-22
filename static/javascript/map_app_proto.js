@@ -37,7 +37,7 @@ function initMap() {
                         fillOpacity: 0.35,
                         map: map,
                         center: pos,
-                        radius: 10000,
+                        radius: 8000,
                     };
                     cityCircle = new google.maps.Circle(circle);
 
@@ -68,7 +68,17 @@ function initMap() {
                             map,
                             title: fullrando.name,
                             position: fullrando.geometry.location,
+                            
                         })
+
+                        const randoplace = document.getElementById("randoplace");
+                        const li = document.createElement("li");
+                        
+                        li.textContent = fullrando.name;
+                        randoplace.appendChild(li);
+                        li.addEventListener("click", () => {
+                        map.setCenter(place.geometry.location);
+                        });
                     })
 
                     
