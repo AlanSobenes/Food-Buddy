@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/flask_app/static/css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/style.css') }}">
     <title>foodbuddy</title>
 </head>
 <body>
@@ -20,12 +20,12 @@
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
-        <img src="/flask_app/static/img/frenchfries.gif" class="img">
+        <img src="{{ url_for('static', filename='/img/frenchfries.gif') }}" class="img">
     </div>
     <div class="btn-mid">
         <h1 class="text">Welcome to foodbuddy</h1>
-        <button class="btn">Start</button>
+        <button class="btn"><a href="/start"></a> Start</button>
     </div>
-    <script src="/flask_app/static/js/html_css.js"></script>
+    <script src="{{ url_for('static', filename='/js/html_css.js') }}"></script>
 </body>
 </html>

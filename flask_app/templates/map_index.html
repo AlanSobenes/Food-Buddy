@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/flask_app/static/css/map_style.css">
-    <script src="/flask_app/static/js/map_app_proto.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/map_style.css') }}">
+    <script src="{{ url_for('static', filename='/js/map_app_proto.js') }}"></script>
     
     
     
@@ -14,31 +14,34 @@
 </head>
 
 <body>
-    
-    
-    <H1 class="text">Food Buddy</H1>
-    <label for="foodCatagory" class="text">Food your in the Mood For</label>
-    <select name="" id="input">
-        <option value="food">Any type</option>
-        <option value="mexican food">Mexican Food</option>
-        <option value="chinese food">Chinese Food</option>
-        <option value="Italian food">Italian Food</option>
-        <option value="american food">American Food</option>
-        <option value="mediterranean food">Mediterranean Food</option>
-        <option value="BBQ food">BBQ</option>
-        <option value="fast food">Fast Food</option>
-    </select>
-    <label for="radius" class="text">Choose your distance!</label>
-    <select name="" id="radius">
-        <option value="500">Walking Distance</option>
-        <option value="10000">Driving Distance</option>
-    </select>
-    <div id="randoplace" class="text">Food Buddy has chosen:</div>
-<div id="flex">
 
-    <div id="map"></div>
+    
+    <div class="header">
+        <H1 class="text1">Food Buddy</H1>
+        <div class="cats">
+            <label for="foodCatagory" class="text">Food your in the Mood For</label>
+            <select name="" id="input" class="input">
+                <option value="food">Any type</option>
+                <option value="mexican food">Mexican Food</option>
+                <option value="chinese food">Chinese Food</option>
+                <option value="Italian food">Italian Food</option>
+                <option value="american food">American Food</option>
+                <option value="mediterranean food">Mediterranean Food</option>
+                <option value="BBQ food">BBQ</option>
+                <option value="fast food">Fast Food</option>
+            </select>
+            <label for="radius" class="text">Choose your distance!</label>
+            <select name="" id="radius" class="input">
+                <option value="500">Walking Distance</option>
+                <option value="10000">Driving Distance</option>
+            </select>
+            <div id="randoplace" class="text text2">Food Buddy has chosen:</div>
+        </div>
+    <div id="flex">
+        <div id="map"></div>
 
-</div>
+    </div>
+    
     
     
 

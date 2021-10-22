@@ -1,5 +1,5 @@
 #map{
-    margin-top: 100px;
+    margin-top: 70px;
     height: 600px;
     width: 75%;
 }
@@ -8,6 +8,35 @@
     justify-content: center;
 }
 body{
-    background-image: url(/flask_app/static/img/foodTable.jpg);
+    background-image: url(/static/img/foodTable.jpg);
+}
+
+.input{
+    height: 25px;
+    width: 150px;
+}
+.text{
+    height: 35px;
+    width: 150px;
+    color: yellow;
+    background-color: red;
+    text-align: center;
+    border-radius: 10%;
+
+}
+.text1{
+    height: 75px;
+    width: 150px;
+    color: yellow;
+    background-color: red;
+    text-align: center;
+    border-radius: 10%;
+    margin-left: 45%;
+}
+.cats{
+    margin-left: 30%;
+}
+.text2{
+    height: 75px;
 }
 
